@@ -1,0 +1,33 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Employee Details.</h1>
+        <p class="lead">Employee details fetched from service file.</p>
+    </div>
+</div>
+
+<div class="container">
+
+    <a style="margin-left: 90%; margin-bottom: 3%;" class="btn btn-sm text-white btn-danger" (click)="out()">Logout</a>
+
+
+
+
+    <table border="2" align="center" class="table">
+        <tr>
+            <td>Id </td>
+            <td>Name</td>
+            <td>Age</td>
+            <td>Gender</td>
+            <td>Phone Number</td>
+
+        </tr>
+        <tr *ngFor="let obj of data;">
+            <td>{{obj.id}}</td>
+            <td>{{obj.name}}</td>
+            <td>{{obj.age}}</td>
+            <td>{{obj.Gender}}</td>
+            <td>{{obj.Phno}}</td>
+        </tr>
+    </table>
+</div>
+<br><br>
